@@ -16,12 +16,12 @@ import (
 
 func main() {
 	var (
-		correct bool
-		name    string
+		yes  bool
+		name string
 	)
-	for !correct {
+	for !yes {
 		name = ask.Ask("What is your name? ")
-		correct = ask.YesNo("Your name is "+name+"?", false)
+		yes = ask.YesNo("Your name is "+name+"?", false)
 	}
 	fmt.Printf("Greetings, %s!\n", name)
 }
